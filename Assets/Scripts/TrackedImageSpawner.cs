@@ -33,7 +33,7 @@ public class TrackedImageSpawner : MonoBehaviour
             {
                 // Instancia el prefab y ajusta su rotación
                 GameObject newPrefab = Instantiate(trackedImagePrefab, trackedImage.transform.position, Quaternion.identity);
-                newPrefab.transform.rotation = Quaternion.Euler(0, 90, 0); // Ajusta la rotación según necesites
+                newPrefab.transform.rotation = Quaternion.Euler(0, 0, 90); // Ajusta la rotación según necesites
 
                 spawnedPrefabs[trackedImage.referenceImage.name] = newPrefab;
             }
